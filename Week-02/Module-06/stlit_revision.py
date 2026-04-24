@@ -24,12 +24,38 @@ import streamlit as st
 # else:
 #     st.warning('press to confirm')
 
-selected = st.selectbox(
-    "Choose your profession",
-    ("student", "employee", "businessman"),
-    index=None,
-    accept_new_options=True
-)
-but_pressed = st.button('Enter')
-if but_pressed:
-    st.write(f"you select :red-background[{selected}]")
+# selected = st.selectbox(
+#     "Choose your profession",
+#     ("student", "employee", "businessman"),
+#     index=None,
+#     accept_new_options=True
+# )
+# but_pressed = st.button('Enter')
+# if but_pressed:
+#     st.write(f"you select :red-background[{selected}]")
+
+# st.title('Input your file: ', anchor=False)
+# st.divider()
+
+# images = st.file_uploader(
+#     "Enter your image: ",
+#     type=['png','jpg','jpeg'],
+#     max_upload_size=3,
+#     accept_multiple_files=True
+# )
+# print(type(images))
+
+# if images:
+#     clm = st.columns(len(images))
+#     for i, perimage in enumerate(images):
+#         with clm[i]:
+#             st.image(perimage)
+#             st.write(f"Figure {i}")
+
+sound = st.file_uploader("enter audio file: ",
+                         type=['mp3', 'flac'],
+                         accept_multiple_files=True)
+
+if sound:
+    st.audio(sound,
+         loop=False)
