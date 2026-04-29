@@ -1,4 +1,4 @@
-import streamlit as st
+# import streamlit as st
 
 # st.write("Hello world")
 # st.title(":red[My first streamlit web applicatin]", anchor=False, width="content")
@@ -16,23 +16,23 @@ import streamlit as st
 # Input Element in streamlit
 # test, number, choose option, button
 
-name = st.text_input("Enter text: ")
-print(type(name))
+# name = st.text_input("Enter text: ")
+# print(type(name))
 
-age = st.number_input("Enter age: ", value=None, placeholder="type your age")
-print(type(age))
+# age = st.number_input("Enter age: ", value=None, placeholder="type your age")
+# print(type(age))
 
-password = st.text_input("Enter password: ", type="password")
-print(type(password))
+# password = st.text_input("Enter password: ", type="password")
+# print(type(password))
 
 # st.write(f"your name is {name}")
 # st.write(f"Number is: {age}")
 # st.write(f"your password is {password}")
 
 # button
-pressed = st.button("Enter To Confirmed", type="primary")
-if pressed:
-    st.write(f"Your name is {name}, age {age}, password {password}")
+# pressed = st.button("Enter To Confirmed", type="primary")
+# if pressed:
+#     st.write(f"Your name is {name}, age {age}, password {password}")
 
 # selecting an option
 

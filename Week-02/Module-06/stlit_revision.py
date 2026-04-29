@@ -1,4 +1,4 @@
-import streamlit as st
+# import streamlit as st
 
 # st.write('Hello world')
 # st.title('My first streamlit web apps', anchor=False)
@@ -40,7 +40,7 @@ import streamlit as st
 # images = st.file_uploader(
 #     "Enter your image: ",
 #     type=['png','jpg','jpeg'],
-#     max_upload_size=3,
+#     max_upload_size=30,
 #     accept_multiple_files=True
 # )
 # print(type(images))
@@ -50,12 +50,25 @@ import streamlit as st
 #     for i, perimage in enumerate(images):
 #         with clm[i]:
 #             st.image(perimage)
-#             st.write(f"Figure {i}")
 
-sound = st.file_uploader("enter audio file: ",
-                         type=['mp3', 'flac'],
-                         accept_multiple_files=True)
+# sound_file = st.file_uploader("enter audio file: ",
+#                          type=['mp3', 'flac'],
+#                          accept_multiple_files=False,
+# )
+# print(type(sound_file))
+# if sound_file:
+#     st.audio(sound_file)
 
-if sound:
-    st.audio(sound,
-         loop=False)
+
+# videos
+
+# video_file = st.file_uploader("Enter file: ",
+#                               type = ['mp4'])
+
+# button = st.button('Upload')
+# if button:
+#     if video_file:
+#         st.video(video_file)
+#         st.success("upload successfully")
+#     else:
+#         st.error("you must upload a file")
